@@ -16,3 +16,8 @@ def index():
 def get_voltage():
     voltage = explorerhat.analog.one.read()
     print (voltage)
+
+
+if __name__ == '__main__':
+    app.run(port=5002, threaded=True, host='0.0.0.0')
+
