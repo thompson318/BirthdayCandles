@@ -43,7 +43,7 @@ async function update_voltages(){
 	console.log("Updating voltage")
 		while (true){
 
-			get_voltage(2);
+			get_voltage(0);
 			await sleep(200);
 		}
 	}
