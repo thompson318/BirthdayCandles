@@ -8,7 +8,7 @@ function sleep(ms) {
 
 function get_voltage(index) {
   
-     console.log("getting voltage:", index)
+ //    console.log("getting voltage:", index)
      fetch("/get_voltage", {
         method: "POST",
         headers: {
@@ -19,7 +19,7 @@ function get_voltage(index) {
     .then(resp => {
         if (resp.ok)
           resp.json().then(data => {
-		console.log("response = ", data);
+		//console.log("response = ", data);
 		voltage = data.voltage;
 		var htmlel = 0
 		if (index == 0)
@@ -30,7 +30,7 @@ function get_voltage(index) {
 		  htmlel = document.getElementById('candle2')
 		if (index == 3)
 		  htmlel = document.getElementById('candle3')
-		console.log("voltage = ", voltage, htmlel)
+//		console.log("voltage = ", voltage, htmlel)
 		htmlel.innerHTML = voltage
 	  });
      })
@@ -40,11 +40,25 @@ function get_voltage(index) {
 }
 
 async function update_voltages(){
-	console.log("Updating voltage")
+	//console.log("Updating voltage")
 		while (true){
-
-			get_voltage(0);
-			await sleep(200);
+		  	htmlel = document.getElementById('candle0img')
+		  	//htmlel.classList.remove("hidden");
+			htmlel.style.display ="block"; 
+			console.log('showing' , htmlel)
+			var i;
+			for (i = 0; i < 10 ; i++){
+				get_voltage(0);
+				await sleep(200);
+			}
+			console.log('hiding' , htmlel)
+		  	//htmlel.classList.add("hidden");
+			htmlel.style.display = "none";
+			for (i = 0; i < 10 ; i++){
+				get_voltage(0);
+				await sleep(200);
+			}
+		
 		}
 	}
 
