@@ -9,6 +9,11 @@ https://bc-robotics.com/tutorials/getting-started-raspberry-pi-16-channel-adc-ha
 
 app = Flask(__name__)
 
+sensors=[]
+for device in range(2):
+    for channel in range(8):
+        sensors.append(MCP3008(channel = channel, device = device))
+
 @app.route('/', methods=['GET'])
 def index():
     """
@@ -22,24 +27,12 @@ def get_voltage():
     jsonstring = json.dumps(request.json)
     #index =json.loads(jsonstring).get('index', 0)
     index = int(jsonstring)
-    print ("index: ", index)
-    sensor = getMCPSensor(index)
     voltage = 0.
-    voltage = sensor.value
+    voltage = sensor[index].value
     print (voltage)
     returnjson = jsonify({'voltage': voltage})
     return returnjson
 
-def getMCPSensor(index):
-    """
-    this should convert a simple index (0-15)
-    into a device and sensor setting
-    """
-    if index == 0:
-        print("returning(7,1)")
-        return MCP3008(channel = 7, device = 1)
-    else:
-        return MCP3008(channel = index, device = 0)
 
 if __name__ == '__main__':
     app.run(port=5002, threaded=True, host='0.0.0.0')
