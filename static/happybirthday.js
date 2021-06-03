@@ -25,37 +25,52 @@ function get_voltage(index) {
 		//console.log("response = ", data);
 		voltage = data.voltage;
 		var htmlel = 0
-		if (index == 0)
+		var image = 0
+		if (index == 0){
 		  htmlel = document.getElementById('candle0')
 		  image = document.getElementById('candle0img')
-		if (index == 1)
+		};
+		if (index == 1){
 		  htmlel = document.getElementById('candle1')
 		  image = document.getElementById('candle1img')
-		if (index == 2)
+};
+		if (index == 2){
 		  htmlel = document.getElementById('candle2')
 		  image = document.getElementById('candle2img')
-		if (index == 3)
+};
+		if (index == 3){
 		  htmlel = document.getElementById('candle3')
 		  image = document.getElementById('candle3img')
-		if (index == 4)
+};
+		if (index == 4){
 		  htmlel = document.getElementById('candle4')
 		  image = document.getElementById('candle4img')
+};
 		if (index == 5)
+{
 		  htmlel = document.getElementById('candle5')
 		  image = document.getElementById('candle5img')
+};
 		if (index == 6)
+{
 		  htmlel = document.getElementById('candle6')
 		  image = document.getElementById('candle6img')
+};
 		if (index == 7)
+{
 		  htmlel = document.getElementById('candle7')
 		  image = document.getElementById('candle7img')
+};
 		if (index == 8)
+{
 		  htmlel = document.getElementById('candle8')
 		  image = document.getElementById('candle8img')
+};
 		if ( voltage > threshold )
 		  {
 			  candleson[index] = false;
 			  image.style.display = "none";
+			  console.log('turning off: ', index, image);
 		  }
 
 //		console.log("voltage = ", voltage, htmlel)
@@ -156,7 +171,6 @@ async function update_voltages(){
 		while (true){
 		  	htmlel = document.getElementById('candle0img')
 			//htmlel.style.display ="block"; 
-			console.log('showing' , htmlel)
 			var i;
 			for (i = 0; i < 10 ; i++){
 				var candle;
@@ -164,17 +178,7 @@ async function update_voltages(){
 					if (candleson[candle])
 						get_voltage(candle);
 				}
-				await sleep(0400);
-			}
-			console.log('hiding' , htmlel)
-			//htmlel.style.display = "none";
-			for (i = 0; i < 10 ; i++){
-				var candle;
-				for (candle = 0 ; candle < 9 ; candle++){
-					if (candleson[candle])
-						get_voltage(candle);
-				}
-				await sleep(0400);
+				await sleep(400);
 			}
 		
 		}
