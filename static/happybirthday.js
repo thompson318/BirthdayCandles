@@ -30,6 +30,16 @@ function get_voltage(index) {
 		  htmlel = document.getElementById('candle2')
 		if (index == 3)
 		  htmlel = document.getElementById('candle3')
+		if (index == 4)
+		  htmlel = document.getElementById('candle4')
+		if (index == 5)
+		  htmlel = document.getElementById('candle5')
+		if (index == 6)
+		  htmlel = document.getElementById('candle6')
+		if (index == 7)
+		  htmlel = document.getElementById('candle7')
+		if (index == 8)
+		  htmlel = document.getElementById('candle8')
 //		console.log("voltage = ", voltage, htmlel)
 		htmlel.innerHTML = voltage
 	  });
@@ -43,20 +53,24 @@ async function update_voltages(){
 	//console.log("Updating voltage")
 		while (true){
 		  	htmlel = document.getElementById('candle0img')
-		  	//htmlel.classList.remove("hidden");
 			htmlel.style.display ="block"; 
 			console.log('showing' , htmlel)
 			var i;
 			for (i = 0; i < 10 ; i++){
-				get_voltage(0);
-				await sleep(200);
+				var candle;
+				for (candle = 0 ; candle < 9 ; candle++){
+					get_voltage(candle);
+				}
+				await sleep(0400);
 			}
 			console.log('hiding' , htmlel)
-		  	//htmlel.classList.add("hidden");
 			htmlel.style.display = "none";
 			for (i = 0; i < 10 ; i++){
-				get_voltage(0);
-				await sleep(200);
+				var candle;
+				for (candle = 0 ; candle < 9 ; candle++){
+					get_voltage(candle);
+				}
+				await sleep(0400);
 			}
 		
 		}
