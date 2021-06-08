@@ -19,7 +19,8 @@ from `BC-Robotics`_, and a set of DC turbines, like these from `Sntieecr`_.
 The software here consists of a Python library (main.py) to query the voltages on the 
 ADC in response to POST requests from a javascript front end (static/happybirthday.js).
 We use `Flask`_ to create a web application overlaying various animations to 
-give the appearance that blowing on the wind turbines blows out the on screen cameras.
+give the appearance that blowing on the wind turbines blows out the on screen candles, 
+shown above rendered with Minecraft. 
 
 .. figure:: https://github.com/thompson318/BirthdayCandles/raw/main/doc/20210608_111525.jpg
    :width: 480px
