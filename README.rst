@@ -22,7 +22,7 @@ We use `Flask`_ to create a web application overlaying various animations to
 give the appearance that blowing on the wind turbines blows out the on screen cameras.
 
 .. figure:: https://github.com/thompson318/BirthdayCandles/raw/main/doc/20210608_111525.jpg
-   :width: 640px
+   :width: 480px
    :alt: Under the Cake
    
    Under the cake, the Raspberry Pi and 16 Channel ADC HAT.
