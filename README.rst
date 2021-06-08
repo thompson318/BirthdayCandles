@@ -1,7 +1,7 @@
 Virtual Cake
 ============
 
-.. image:: https://github.com/thompson318/BirthdayCandles/raw/main/doc/fredlogo.svg
+.. image:: https://github.com/thompson318/BirthdayCandles/raw/main/doc/20210605_152438.jpg
    :width: 640px
    :target: https://github.com/thompson318/BirthdayCandles
    :alt: Cake, Real and Virtual
