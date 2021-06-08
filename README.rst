@@ -21,6 +21,12 @@ ADC in response to POST requests from a javascript front end (static/happybirthd
 We use `Flask`_ to create a web application overlaying various animations to 
 give the appearance that blowing on the wind turbines blows out the on screen cameras.
 
+.. figure:: https://github.com/thompson318/BirthdayCandles/raw/main/doc/20210608_111525.jpg
+   :width: 640px
+   :alt: Under the Cake
+   
+   Under the cake, the Raspberry Pi and 16 Channel ADC HAT.
+
 .. _`Raspberry Pi`: https://www.raspberrypi.org/
 .. _`BC-Robotics`: https://bc-robotics.com/tutorials/getting-started-raspberry-pi-16-channel-adc-hat-v2/
 .. _`Sntieecr`: https://www.amazon.co.uk/Sntieecr-Mini-Generator-Motors-3V-12V-DC-Motor-Generator-Educational-Experiment/dp/B0922N8MCR/
