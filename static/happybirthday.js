@@ -78,6 +78,6 @@ async function update_voltages(){
 		}
 	}
 
-update_voltages()
+//update_voltages()
 
 
