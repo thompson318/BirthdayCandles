@@ -1,0 +1,19 @@
+Who are you and what do you do?
+I'm Stephen Thompson, I work part time as a Research Software Engineer at the Wellcome/EPSRC Centre for Interventional and Surgical Sciences(WEISS). At WEISS I am developing software to deliver augmented reality for surgery, primarily written in Python, but also in JavaScript and C++.
+I am extremely keen to enable researchers to better utilise open source software to create open and reproducible science. Outside of my working hours I am an advocate for getting children coding, running a CodeClub and creating content to encourage involvement with computer science. 
+
+What is your project?
+
+Where did the idea come from?
+I have always enjoyed making my children's birthday cakes, following in my mothers imaginative footsteps, with a firm belief that function is as important as flavour. In 2021 I had to make a cake for my 9 year old, however, due to COVID 19 I couldn't let him blow the candles out on a cake that other people might eat. Faced with the possibility of making him his own personal chocolate cake, I decided to create a virtual cake instead.
+
+Why use Raspberry Pi?
+The Raspberry PI provided a cost effective interface with analogue to digital converters needed to read the wind turbine voltages, along with sufficient computing power to serve the web application from within the cake itself.
+
+Roughly how does it work?
+
+What were the reactions to it like?
+
+What are the major components?
+
+Anything else you'd like to add?
