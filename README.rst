@@ -10,7 +10,7 @@ Author: Stephen Thompson
 
 When confronted with the need to avoid children blowing out candles on an actual cake, 
 the obvious solution was to build a virtual cake, with on screen candles controlled 
-by a set of wind turbines. Here it is, the future of cake.
+by a set of wind turbines. Here it is, as featured in the `MagPi`_, the future of cake.
 
 The project utilises a `Raspberry Pi`_, an analogue to digital converter(ADC)
 like this one 
@@ -33,3 +33,4 @@ shown above rendered with `Minecraft`_.
 .. _`Sntieecr`: https://www.amazon.co.uk/Sntieecr-Mini-Generator-Motors-3V-12V-DC-Motor-Generator-Educational-Experiment/dp/B0922N8MCR/
 .. _`Flask`: https://flask.palletsprojects.com/en/2.0.x/
 .. _`Minecraft`: https://www.minecraft.net/
+.. _`MagPi`: https://magpi.raspberrypi.com/articles/virtual-minecraft-birthday-cake
